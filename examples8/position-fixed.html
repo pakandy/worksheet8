@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- Program: position-fixed.html -->
+<!-- Author: Andy Pak, Sheridan College -->
+<!-- Date: Nov, 2020 -->
+<!-- This program illustrates the behavior of fixed position -->
+<html lang="en">
+    <head>
+        <title>Week 5 More Position Property</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./images/favicon.ico" type="image/png">  
+        <style>
+            #right {
+                position: fixed;
+                top: 1.5em;
+                left: 20%;
+                width: 70%;
+                border: black solid;
+                overflow: auto;  
+                height: 40em;
+            }
+            #left {
+                position: fixed;
+                top: 1.5em;
+                left: 4%;
+                width: 13%;
+                border: rgb(22, 6, 116) solid;
+                height: 25em;
+                padding-left: 0.5em;
+            }
+            a:visited { 
+                color:royalblue;
+            }
+
+        </style>
+    </head>
+    <body style="font-size: 1.3em;">
+        <section id="left">
+            <div>
+            <h4 style="text-decoration: underline; color:rgb(22, 6, 116)">Table of Contents</h4>
+            <nav style="padding-left: 0.6em;">
+                <a href="#top">Top</a><br>
+                <a href="#learn">Latest technologies</a><br>
+                <a href="#handson">Hands-on experience</a><br>
+                <a href="#bottom">Bottom</a><br>
+            </nav>
+            </div>
+        </section>
+        <section id="right" >
+        <div id="top" style="padding: 0.5% 1%;">
+            <a href="#bottom" style="float: right; display: flex; text-align: right; margin-left: 20%;">Go to bottom</a>
+
+            <h2 id="sheridan" style="color: red">Welcome to Sheridan</h2>
+            Founded in 1967, Sheridan has grown from a local college of 400 students to one of Ontario’s leading postsecondary institutions, educating approximately 24,500 full-time and 18,500 continuing and part-time studies students every year on three campuses in three Ontario cities – Oakville, Brampton and Mississauga.
+            An award-winning institution, Sheridan attracts students from across Canada and around the world. Sheridan’s 175,000 alumni play a critical role in shaping the future of our society in the fields of arts, business, community service, health, technology, and the skilled trades.
+            <h2>Inspiring Creativity</h2>
+            Our Creative Campus means your courses are designed to give you problem solving and critical thinking tools throughout your program, top to bottom. We’re the first undergraduate school to offer a creativity course available to any student in any faculty.
+            <h2>Solve problems using technology</h2>
+            Learn about Sheridan’s Computer Systems Technology program, where students learn the latest skills for this ever-changing industry. With co-op placements, the newest technology and teamwork as hallmarks of this program, we’ll help prepare you for a successful career.
+            <h2 id='learn'>Learn the latest computing technologies</h2>
+            In this program, you’ll build your skills and knowledge in multiple computing platforms and environments. You’ll learn to apply the latest technologies to solve real-world problems with:
+            <ul>
+                <li>iOS and Android application development</li>
+                <li>Java, and Java Frameworks, C#, .NET and .net server development</li>
+                <li>Web technologies and web application development</li>
+                <li>Oracle and SQL server</li>
+                <li>Version control</li>
+            </ul>
+            <h2 id='handson'>Get hands-on experience</h2>
+            Our Systems Analyst program is accredited by the Canadian Information Processing Society (CIPS). The third year of the program features Capstone-Based Learning (CBL), a uniquely Sheridan approach to curriculum delivery. In the Capstone course, you’ll build an end-to-end application to solve a real-world problem for a client.
+            
+            <h2 id="cp1">Turn your diploma into a degree</h2>
+            After earning your Computer Systems Technology advanced diploma, you can apply to bridge into Year 3 of one of these Sheridan degree programs: Honours Bachelor of Applied Computer Science (Mobile Computing), or Honours Bachelor of Applied Information Sciences (Information Systems Security).
+            
+            <h2>Get ready for a career as a systems analyst</h2>
+            Graduates of Sheridan’s Systems Analyst program stand out in the job market for their job-ready knowledge and skills and ability to apply them.
+            
+            The courses in this program will help you develop your skills in the following areas:
+            
+            <ul id="closetobottom">
+                <li>Mobile hybrid and native application development</li>
+                <li>Operating systems including Windows and Linux/Unix</li>
+                <li>Systems analysis and design</li>
+                <li>Database design and implementation</li>
+                <li>Database administration</li>
+                <li>Data communications</li>
+                <li>Network configuration</li>
+                <li>Systems security</li>
+                <li>Project management</li>
+            </ul>
+            <p id="bottom">The Computer Systems Technology – Systems Analyst program is offered at the Davis Campus in Brampton and the Trafalgar Road Campus in Oakville.</p>
+            <a href="#top">Go to top</a>
+        </div>
+        </section>
+    </body>
+</html>

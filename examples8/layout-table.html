@@ -1,0 +1,32 @@
+  <!DOCTYPE html>
+  <!-- Program: layout-table.html -->
+  <!-- Author: Andy Pak, Sheridan College -->
+  <!-- Date: Nov, 2020 -->
+  <!-- This program creates a basic layout using the <table> tag -->
+  <html lang="en">
+    <head>
+        <title>Layout-table</title>
+        <style>
+          * { text-align: center; font-weight: bold; }
+          table { width: 100%; }
+          .hdft {  background-color: #b5dcb3; }
+          .ht2 { height: 2em; background-color: #f1f5cf; }
+          .content { background-color: #eee;  height: 15em; }
+        </style>
+    </head>
+    <body>
+      <table border="1">
+        <tr><td colspan='3' class='hdft'><h1>Header</h1></td></tr>
+        <tr><td class='ht2' colspan='3'><h3>Navigation Bar</h3></td></tr>
+        <tr style="vertical-align: top;">
+          <td class='content'>
+            <h3>Content 1</h3><br><hr>
+            <h3>Content 2</h3><br><hr>
+            <h3>Content 3</h3></td>
+          <td class='content'><h3>Content 4</h3></br></td>
+          <td class='content'><h3>Content 5</h3></br></td>
+        </tr>
+        <tr><td colspan='3' class='hdft' style="height: 3em;"><h3>Footer</h3></td></tr>
+      </table>
+    </body>
+  </html>

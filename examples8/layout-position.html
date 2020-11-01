@@ -1,0 +1,32 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <!-- Program: layout-position.html -->
+    <!-- Author: Andy Pak, Sheridan College -->
+    <!-- Date: Nov, 2020 -->
+    <!-- This program creates a basic layout using the position property -->
+    <head>
+      <title>Layout-Position</title>
+      <style>
+        * { text-align: center; font-weight: bold; }
+        header, nav, footer { border: solid 1px black; background-color: #b5dcb3; }
+        nav { background-color: #f1f5cf; height: 4em; }
+        div { position: relative; height: 16.5em; border: 1px solid black; }
+        main { position: absolute; text-align: center; width: 33%; border-left: solid 1px; 
+              padding-top: 1.5em; height: 15em; }
+        .cont1 { left: 0%; }
+        .cont2 { left: 33%; }
+        .cont3 { left: 66%; }
+        </style>
+      </head>
+        
+      <body>
+        <header><h1>Header</h1></header>
+        <nav><h3>Navigation Bar</h3></nav>
+        <div>
+          <main class='cont1'>Content 1</main>
+          <main class='cont2'>Content 2</main>
+          <main class='cont3'>Content 3</main>
+        </div>
+        <footer><h3>Footer</h3></footer>
+      </body>  
+  </html>

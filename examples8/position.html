@@ -1,0 +1,56 @@
+  <!DOCTYPE html>
+  <!-- Program: position.html -->
+  <!-- Author: Andy Pak, Sheridan College -->
+  <!-- Date: Nov, 2020 -->
+  <!-- This program illustrates the behavior of different position methods -->
+  <!-- Change the value of the position properties and observe the change of behavior  -->
+  <html lang="en">
+    <head>
+      <title>CSS Position</title>
+      <style>
+        * { border: solid 1px black;  }
+        div { position: static; height: 19em; width: 70%; background-color: lightskyblue; }
+        .rel { position: relative; left: 9em; top: -5em; background-color: linen; text-align: center; }
+        .fix { position: fixed; width: 50%; left: 5em; top: 4em; height: 7em; text-align: center; 
+               background-color: mediumaquamarine; z-index: 1; }
+        .abs { position: absolute; top: 3em; left  : 20em; height: 7em; 
+               background-color: mediumvioletred; }
+        main { position: relative; background-color:peachpuff; height: 17em; width: 70%; text-align: center; } 
+        .stick { position: sticky; top: 4em; left: 25em; height: 15em; width: 40em; text-align: center; z-index: 2;
+                 background-color:darkorange;  } 
+        </style>
+      </head>
+        
+      <body>
+        <div>ELEMENT A - STATIC (NORMAL FLOW)<br>ELEMENT A - STATIC (NORMAL FLOW)<br>ELEMENT A - STATIC (NORMAL FLOW)<br>
+        ELEMENT A - STATIC (NORMAL FLOW)<br>ELEMENT A - STATIC (NORMAL FLOW)<br>ELEMENT A - STATIC (NORMAL FLOW)<br></div>
+        <div class='rel'>ELEMENT B - RELATIVE (NORMAL FLOW - top: -5em; left: 9em;)<br>
+        ELEMENT B - RELATIVE (NORMAL FLOW - top: -5em; left: 9em;)<br>ELEMENT B - RELATIVE (NORMAL FLOW - top: -5em; left: 9em;)<br>ELEMENT B - RELATIVE (NORMAL FLOW - top: -5em; left: 9em;)<br>ELEMENT B - RELATIVE (NORMAL FLOW - top: -5em; left: 9em;)<br></div>
+        <div class='fix'>ELEMENT C - FIXED (DOES NOT SCROLL - top: 4em; left: 5em;)<br>
+        ELEMENT C - FIXED (DOES NOT SCROLL - top: 4em; left: 5em;)<br>ELEMENT C - FIXED (DOES NOT SCROLL - top: 4em; left: 5em;)<br>
+        POSITION RELATIVE TO THE <code>VIEWPORT</code></div>
+        <main>ELEMENT D - RELATIVE (NORMAL FLOW)<br>    
+          <div class='abs'>ELEMENT E - ABSOLUTE (top: 3em; left: 20em;)<br>ELEMENT E - ABSOLUTE (top: 3em; left: 20em;)<br>
+          ELEMENT E - ABSOLUTE (top: 3em; left: 20em;)<br>POSITION RELATIVE TO ELEMENT D THAT IS THE NEAREST POSITIONED ANCESTOR</div>
+          ELEMENT D - RELATIVE (NORMAL FLOW)<br>
+          ELEMENT D - RELATIVE (NORMAL FLOW)<br>
+          ELEMENT D - RELATIVE (NORMAL FLOW)<br>
+          ELEMENT D - RELATIVE (NORMAL FLOW)<br>
+          ELEMENT D - RELATIVE (NORMAL FLOW)<br>
+          ELEMENT D - RELATIVE (NORMAL FLOW)<br>
+          ELEMENT D - RELATIVE (NORMAL FLOW)<br>
+          ELEMENT D - RELATIVE (NORMAL FLOW)<br>
+          ELEMENT D - RELATIVE (NORMAL FLOW)<br>
+          ELEMENT D - RELATIVE (NORMAL FLOW)<br>
+        </main>
+        <div class='stick' id='sstick'>ELEMENT F - STICKY (top: 4em; left: 8em;)<br>
+        ELEMENT F - STICKY (top: 4em; left: 8em;)<br>ELEMENT F - STICKY (top: 4em; left: 8em;)<br>
+        ELEMENT F - STICKY (top: 4em; left: 8em;)<br>ELEMENT F - STICKY (top: 4em; left: 8em;)<br>
+        ELEMENT F - STICKY (top: 4em; left: 8em;)<br>ELEMENT F - STICKY (top: 4em; left: 8em;)<br>
+        ELEMENT F - STICKY (top: 4em; left: 8em;)<br>ELEMENT F - STICKY (top: 4em; left: 8em;)<br>
+        BECOMES 'FIXED' WHEN IT GETS TO 4em (<code>top: 4em;</code>) OF THE <code>VIEWPORT</code>
+        </div>
+        <div>ELEMENT G - STATIC (NORMAL FLOW)</div>
+        <div>ELEMENT H - STATIC (NORMAL FLOW)</div>
+      </body>  
+  </html>
