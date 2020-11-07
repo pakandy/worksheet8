@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Program: practice1.html -->
+<!-- Author: Andy Pak, Sheridan College -->
+<!-- Date: Nov, 2020 -->
+<!-- This program creates a basic layout using the positon property -->
+<html lang="en">
+  <head>
+      <title>Practice-1</title>
+      <style>
+        h1, section, aside { border: 1px solid black; }
+        h1 { height: 2em; padding-top: 0.75em; margin: 0; text-align: center; font-weight: bold; background-color: #b5dcb3; }
+        .hdft2 { text-align: center; font-weight: bold; position: absolute; top: 30.5em; background-color: #b5dcb3; 
+                 padding-top: 1em; width: 99%;}
+        .htnav { text-align: center; font-weight: bold; height: 2em; background-color: #f1f5cf; }
+        a { width: 20%; float: left; padding-top: 0.35em; }
+        .art1 { position: relative; left: 1em; }
+        .asi1 { padding: 0.5em 2em; width: 35%; color:darkblue; }  
+        .asi1 { 
+              background-image: url('./images/sheridan.jpeg');
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-color: rgba(255,255,255,0.5);  
+              background-blend-mode:lighten;  
+            }
+        .art2 { position: relative; padding: 0.5em 2em; color:darkblue; font-weight: bold;
+                top: -22em; left: 35em; width: 56%; height: 21em; background-color:rgb(227, 240, 210); }  
+        .art2::before {
+            content: '';  
+            position: absolute;
+            top: 0; bottom: 0; left: 0; right: 0;
+            background: url('./images/fast.jpg');
+            opacity: 0.3;
+            background-size: contain;
+          }
+      </style>
+  </head>
+  <body>
+      <h1 class='hdft'>Sheridan College (Practice 1)</h1>
+      <section class='htnav' class='nav'>
+        <a href="https://www.sheridancollege.ca/academics/faculties/applied-health-and-community-studies">FAHCS</a>
+        <a href="https://www.sheridancollege.ca/academics/faculties/applied-science-and-technology">FAST</a>
+        <a href="https://www.sheridancollege.ca/academics/faculties/business">PSB</a>
+        <a href="https://www.sheridancollege.ca/academics/faculties/animation-arts-and-design">FAAD</a>
+        <a href="https://www.sheridancollege.ca/academics/faculties/humanities-and-social-sciences">FHSS</a>
+      </section>
+      <section>
+        <aside class='asi1'>
+          <article class='art1'><h4>Faculties</h4>
+            <ul><li>Faculty of Applied Health & Community Studies</li>
+              <li>Faculty of Applied Science & Technology</li>
+              <li>Pilon School of Business</li>
+              <li>Faculty of Animation, Arts & Design</li>
+              <li>Faculty of Humanities & Social Sciences</li>
+            </ul>
+          </article><hr>
+          <article class='art1'><h4>Faculty of Applied Science & Technology</h4>
+            <ul><li>Engineering Sciences</li>
+              <li>Applied Computing</li>
+              <li>Skilled Trades</li>
+              <li>Architectural Technology</li>
+              <li>Chemical and Environmental Services</li>
+            </ul>
+          </article>
+        </aside>
+        <aside class='art2'>
+          <article>
+          <h4>Why Sheridan?</h4>
+          <p>In an economy based on innovation and change, leading CEOs agree that creativity is the top skill you can bring to the workplace. Whether you choose policing or programming, musical theatre or marketing, building a resourceful and flexible mind will help you excel in your career and inspire real change that benefits your life and community.</p>
+          <p>Sheridan’s Faculty of Applied Science and Technology (FAST) provides a purposeful and nimble post secondary education.</p>
+            <p>At FAST, we provide practical, hands-on learning opportunities that can be carried from the classroom to the workforce. Our high-intensity and industry-renowned programs equip you with relevant knowledge and real-world problem solving skills.</p>
+            <p>From computing to engineering, architectural technology to chemistry and skilled trades, as a FAST graduate, you’ll have more opportunities in a rapidly changing world.</p>
+          </article>
+        </aside>
+      </section>
+      <section class='hdft2' style="height: 3em;"><a href="https://www.sheridancollege.ca/">Sheridan College</a>
+      </section>
+    
+  </body>
+</html>
